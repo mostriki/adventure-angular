@@ -6,4 +6,6 @@
   <br>
   <br>
   <h4>Health: {{(gameToDisplay | async).description}}</h4>
+  <a routerLink="/games/{{(gameToDisplay | async).turn + 1}}">Marketplace</a>
+  <button type="button" (click)="goToNext({{(gameToDisplay | async).turn + 1}})"></button>
 </div>

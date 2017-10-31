@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 import { User } from '../user.model';
 import { Game } from '../game.model';
 import { UserService } from '../user.service';
@@ -21,7 +22,7 @@ export class GameComponent implements OnInit {
   userToDisplay;
   gameToDisplay;
 
-  constructor(private route: ActivatedRoute, private location: Location, private userService: UserService, private gameService: GameService) { }
+  constructor(private router: Router, private route: ActivatedRoute, private location: Location, private userService: UserService, private gameService: GameService) { }
 
   ngOnInit() {
    this.userId = '0';
@@ -31,5 +32,9 @@ export class GameComponent implements OnInit {
    this.gameId = urlParameters['id'];
    });
    this.gameToDisplay = this.gameService.getGameById(this.gameId);
+  }
+
+  goToNext(here) {
+    this.router.navigate(['games/here']);
   }
 }
