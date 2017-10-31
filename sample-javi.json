@@ -1,0 +1,6 @@
+{ "users": [{
+    "name": "Javi",
+    "money": 1000,
+    "health": 100
+    }]
+}

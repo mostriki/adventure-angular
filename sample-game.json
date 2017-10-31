@@ -1,0 +1,44 @@
+{ "games": [{
+    "turn": 1,
+    "choice": 0,
+    "description": "Bad Choice One. Javis computer Breaks",
+    "money": 1000,
+    "health": 100
+    }, {
+      "turn": 1,
+    "choice": 1,
+    "description": "Good Choice One. Javis computer Makes Money",
+    "money": 1000,
+    "health": 100
+    }, {
+      "turn": 2,
+    "choice": 0,
+    "description": "Bad Choice Two. Javis computer Breaks",
+    "money": 1000,
+    "health": 100
+    }, {
+      "turn": 2,
+    "choice": 1,
+    "description": "Good Choice Two. Javis computer Makes Money",
+    "money": 1000,
+    "health": 100
+    }, {
+      "turn": 3,
+    "choice": 0,
+    "description": "Bad Choice Three. Javis computer Breaks",
+    "money": 1000,
+    "health": 100
+    }, {
+      "turn": 3,
+    "choice": 1,
+    "description": "Good Choice Three. Javis computer Makes Money",
+    "money": 1000,
+    "health": 100
+  }],
+
+ "users": [{
+    "name": "Javi",
+    "money": 1000,
+    "health": 100
+    }]
+}
